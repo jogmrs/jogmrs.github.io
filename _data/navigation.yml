@@ -11,19 +11,16 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
+    - title: "Áreas de Interesse"
       section: services
-    - title: "Portfolio"
+    - title: "Aprendizados em Construção"  # Mudei aqui
       section: portfolio
-    - title: "About"
+    - title: "Sobre Mim"                   # Mudei aqui
       section: about
-    - title: "Timeline"
+    - title: "Trajetória"                  # Mudei aqui
       section: timeline
-    - title: "Team"
-      section: team
-    - title: "Contact"
+    - title: "Contato"                    # Mudei aqui (e ocultei o "Team")
       section: contact
-    - title: "Theme Source"
       url: https://github.com/raviriley/agency-jekyll-theme/
 
 en-001: #English (World)
