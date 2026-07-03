@@ -13,13 +13,13 @@ en: &DEFAULT_EN
   nav:
     - title: "Áreas de Interesse"
       section: services
-    - title: "Aprendizados em Construção"  # Mudei aqui
+    - title: "Aprendizados em Construção"
       section: portfolio
-    - title: "Sobre Mim"                   # Mudei aqui
+    - title: "Sobre Mim"
       section: about
-    - title: "Trajetória"                  # Mudei aqui
+    - title: "Trajetória"
       section: timeline
-    - title: "Contato"                    # Mudei aqui (e ocultei o "Team")
+    - title: "Contato"
       section: contact
       url: https://github.com/raviriley/agency-jekyll-theme/
 
