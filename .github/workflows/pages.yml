@@ -1,42 +1,46 @@
-name: Deploy GitHub Pages
+name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["main"] # Altere para "master" se a sua branch principal tiver esse nome
+    branches: ["main"] # Mude para "master" se a sua branch principal for master
 
-  # Permite rodar esse workflow manualmente pela aba Actions
   workflow_dispatch:
 
-# Define as permissões necessárias para o token do GitHub Actions
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Garante que cancels de deploys antigos aconteçam se você fizer pushes seguidos
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    needs: build
     steps:
-      - name: Checkout do código
-        uses: actions/checkout@v4
-
-      - name: Configurar o GitHub Pages
-        uses: actions/configure-pages@v5
-
-      # ATENÇÃO AQUI: Usamos o upload-pages-artifact, e não o upload-artifact comum
-      - name: Upload do site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.' # Ponto significa que o index.html está na raiz do seu projeto
-
-      - name: Deploy para o GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
