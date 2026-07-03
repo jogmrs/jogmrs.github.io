@@ -13,14 +13,14 @@
 
 #theme: jekyll-agency
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url : "https://jogmrs.github.io"
+baseurl: ""
 
 title      : "Joana Guimarães"
 email      : "joana.guimaraes@ufv.br"
 description: "Página pessoal acadêmica de Joana Guimarães, estudante de Ciência de Dados."
 author     : "Joana Guimarães"
-locale: "en-US"
+locale: "en"
 
 analytics:
   google: #Google Analytics tracking code here
