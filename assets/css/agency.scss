@@ -41,9 +41,3 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "layout/team.scss";
 @import "layout/contact.scss";
 @import "layout/footer.scss";
-
-.timeline-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-}
