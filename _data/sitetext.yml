@@ -47,7 +47,7 @@ en: &DEFAULT_EN
         image: assets/img/timeline3.png
         alt: "Próximos passos na formação"
         align: right
-    end: "Em Construção"
+    end: ""
 
   about:
     title: "Sobre mim"
