@@ -34,17 +34,17 @@ en: &DEFAULT_EN
       - title: "Formação complementar na área industrial"
         year: "Antes da graduação"
         desc: "Concluí cursos de Logística e Manutenção Mecânica Industrial pela Aperam, experiências que ampliaram minha visão sobre processos, organização, operação e o contexto industrial."
-        image: img/timeline1.png
+        image: assets/img/timeline1.png
         alt: "Formação complementar em logística e manutenção industrial"
       - title: "Ciência de Dados"
         year: "2026 — atual"
         desc: "Atualmente curso o 2º período de Ciência de Dados. A mudança representa uma aproximação com análise de dados, programação e tecnologia, áreas que complementam meu interesse por problemas reais e melhoria de processos."
-        image: img/timeline2.png
+        image: assets/img/timeline2.png
         alt: "Transição para Ciência de Dados"
       - title: "Próximos passos"
         year: "Em construção"
         desc: "Quero desenvolver projetos acadêmicos e experiências práticas envolvendo análise de dados, Inteligência Artificial e Machine Learning, conectando tecnologia a desafios reais."
-        image: img/timeline3.png
+        image: assets/img/timeline3.png
         alt: "Próximos passos na formação"
         align: right
     end: "Em Construção"
@@ -63,7 +63,7 @@ en: &DEFAULT_EN
     people:
       - name: "Joana Guimarães"
         role: "Estudante de Ciência de Dados | 2º período"
-        image: img/joana.jpeg
+        image: assets/img/joana.jpeg
         social:
           - url: https://github.com/jogmrs
             icon: fab fa-github
