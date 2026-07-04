@@ -30,7 +30,7 @@ en: &DEFAULT_EN
     title: "Minha Trajetória"
     text: "Uma trajetória construída entre indústria, processos, dados e tecnologia."
     section: timeline
-   events:
+    events:
       - title: "Formação complementar na área industrial"
         year: "Antes da graduação"
         desc: "Concluí cursos de Logística e Manutenção Mecânica Industrial pela Aperam, experiências que ampliaram minha visão sobre processos, organização, operação e o contexto industrial."
@@ -63,13 +63,12 @@ en: &DEFAULT_EN
     people:
       - name: "Joana Guimarães"
         role: "Estudante de Ciência de Dados | 2º período"
-        image: assets/img/joana.jpeg
+        image: img/joana.jpeg
         social:
           - url: https://github.com/jogmrs
             icon: fab fa-github
           - url: https://www.linkedin.com/in/joana-guimaraes-ufv/
             icon: fab fa-linkedin-in
-
   contact:
     title: "Vamos conversar?"
     text: "Para conexões, oportunidades de aprendizado e projetos acadêmicos."
